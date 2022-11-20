@@ -1,0 +1,41 @@
+.form-container {
+  height: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-body {
+  vertical-align: middle;
+  height: 10vw;
+  width: 100%;
+}
+
+.form > input,
+.form > textarea {
+  background-color: transparent;
+  margin-bottom: 2%;
+  color: #f7f7f7 !important;
+}
+
+.form > input:focus,
+.form > textarea:focus {
+  background-color: transparent;
+  outline: white;
+  border-color: transparent;
+}
+
+.form > button {
+  background-color: #da9958;
+  width: 15%;
+  margin: auto;
+  font-weight: 700;
+  color: #f7f7f7;
+  padding: 0.5% 0.5%;
+  transition: 0.3s;
+}
+
+.form > button:hover {
+  background-color: #e07102;
+  transition: 0.3s;
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.blogs-container {
+  padding: 4%;
+}
+.blogs-container > a {
+  text-decoration: none;
+}
+.blog-card {
+  text-align: center;
+  box-shadow: black 0 0 20px;
+  margin: auto;
+  margin-bottom: 2%;
+  padding: 2%;
+  width: 80%;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.blog-title {
+  font-size: 1.5 rem;
+  font-weight: 600;
+  color: #f7f7f7;
+  text-transform: capitalize;
+}

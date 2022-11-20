@@ -1,0 +1,46 @@
+article {
+  padding: 12%;
+  text-align: center;
+  position: relative;
+}
+article h2 {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+article > p {
+  word-wrap: break-word;
+  margin: auto;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: left;
+  margin-top: 4%;
+  word-break: break-all;
+  z-index: 1;
+}
+.btn-container {
+  display: flex;
+  width: 20%;
+  margin: 0;
+}
+.del-btn {
+  background-color: rgb(179, 6, 6);
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+}
+.edit-btn {
+  background-color: #e07102;
+
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+.del-btn,
+.edit-btn {
+  margin: 6% 0;
+  padding: 0.75%;
+  border-radius: 5px;
+  color: #f7f7f7;
+  font-weight: 600;
+  border: none;
+}
