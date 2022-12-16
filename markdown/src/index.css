@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bck-clr: #f1f5f8;
+  --bck-clr2: #222;
+  --border-rad1: 5px;
+  --shadow1: 0 3px 10px #222;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bck-clr);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*global*/
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-3);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/*  global classes */
+
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+article,
+textarea {
+  width: 40vw;
+  height: 35vw;
+}
+article {
+  word-wrap: break-word;
+}
+textarea {
+  margin-right: 3%;
+  border-radius: var(--border-rad1);
+  padding: 1%;
+  box-sizing: border-box;
+  box-shadow: var(--shadow1);
+}
+
+/*markdown*/
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.markdown-center {
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*markdown preview styling*/
+blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  border-left: 5px solid #617d98;
+  color: var(--clr-grey-5);
+  padding-left: 2rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+blockquote ::first-letter {
+  text-transform: uppercase;
+}
+pre {
+  background: var(--bck-clr2);
+  display: inline-block;
+  border-radius: var(--border-rad1);
+  padding: 1rem 2rem;
+  color: yellow;
+  margin-bottom: 1.5rem;
+}
+/*media queries*/
+@media screen and (max-width: 800px) {
+  .markdown-center {
+    flex-direction: column;
+    justify-content: center;
+  }
+  textarea {
+    margin-bottom: 5%;
+  }
+  textarea,
+  article {
+    width: 20rem;
+    height: 10rem;
+  }
+}
